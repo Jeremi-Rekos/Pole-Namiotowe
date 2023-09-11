@@ -21,7 +21,8 @@ header {
   box-shadow: 1px 1px 1px #9c9c9c;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 10px;
+  z-index: 6;
+  /* margin-bottom: 10px; */
 }
 .logo {
   display: flex;
@@ -58,7 +59,7 @@ main {
   padding-bottom: 200px;
 }
 .conteiner_1 {
-  height: 300px;
+  height: 200px;
   width: 100%;
 }
 .onas {
@@ -86,10 +87,10 @@ main {
   line-height: 27px;
   text-align: center;
 }
-.conteiner_2 p {
+.firstText {
   margin-bottom: 50px;
 }
-.conteiner_2 p::first-letter {
+.firstText::first-letter {
   font-size: 25px;
   font-weight: 700;
 }
@@ -135,14 +136,39 @@ main {
   background-color: aliceblue;
   height: 600px;
   width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.315);
+}
+.rezerwacja p {
+  margin-top: 15px;
+  font-size: 15px;
+}
+.rezerwacja button {
+  border: none;
+  border-radius: 15px;
+  padding: 10px 30px;
+  height: 50px;
+  width: 200px;
+  background-color: #64be48;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.315);
 }
 .mapa {
   border-radius: 30px;
   height: 600px;
   width: 100%;
   overflow: hidden;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.315);
+}
+.ending {
+  font-weight: 300;
+  margin-top: 100px;
 }
 footer {
   height: 100px;
   width: 100%;
+  background-color: rgb(1, 20, 2);
 }
