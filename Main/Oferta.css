@@ -1,0 +1,150 @@
+:root {
+  --mainColor: #6cce4e;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+header {
+  background-color: var(--mainColor);
+  height: 120px;
+  width: 1730px;
+  box-shadow: 1px 1px 1px #9c9c9c;
+  display: flex;
+  justify-content: space-around;
+  z-index: 6;
+  /* margin-bottom: 10px; */
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logoClass {
+  height: 100px;
+}
+.nazwa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+main {
+  width: 100%;
+  height: 1400px;
+  position: relative;
+  background-image: url(zdj/img1.jpg);
+  background-size: cover;
+}
+.conteiner_1 {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conteiner_1 h1 {
+  font-weight: 500;
+  font-size: 45px;
+}
+.paper {
+  background-color: white;
+  width: 1100px;
+  height: 900px;
+  margin: 70px auto;
+  box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.315);
+}
+.conteiner_2 {
+  height: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  position: absolute;
+  width: 50%;
+  font-size: 20px;
+  height: 65%;
+}
+.text2 {
+  position: absolute;
+  width: 50%;
+  font-size: 20px;
+  height: 40%;
+  margin-top: 200px;
+}
+.text3 {
+  position: absolute;
+  width: 50%;
+  font-size: 20px;
+  height: 20%;
+  margin-top: 400px;
+}
+button {
+  margin-top: 450px;
+  height: 50px;
+  width: 500px;
+  border: none;
+  background-color: var(--mainColor);
+  font-size: 23px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.315);
+}
+.block {
+  height: 50px;
+  width: 500px;
+  background-color: var(--mainColor);
+  position: absolute;
+}
+.block1 {
+  height: 500px;
+  width: 50px;
+  background-color: var(--mainColor);
+  position: absolute;
+}
+.bl-1 {
+  top: 200px;
+  left: 900px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.315);
+}
+.bl-2 {
+  top: 200px;
+  left: 1400px;
+  box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.315);
+}
+.bl-3 {
+  top: 1100px;
+  left: 300px;
+  box-shadow: 1px -3px 5px rgba(0, 0, 0, 0.315);
+}
+.bl-4 {
+  top: 600px;
+  left: 300px;
+  box-shadow: 1px -5px 5px rgba(0, 0, 0, 0.315);
+}
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: rgb(1, 20, 2);
+}
