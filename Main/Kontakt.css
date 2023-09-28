@@ -52,47 +52,51 @@ header {
   list-style: none;
 }
 main {
-  background-image: url(zdj/img1.jpg);
-  background-size: cover;
-}
-.container_1 {
+  background-image: linear-gradient(45deg, var(--BGC) 50%, var(--mainColor));
+  width: auto;
   height: auto;
-  width: 80%;
-  margin: 0px 10%;
-  padding: 150px 0px;
 }
-.cennik {
-  height: 700px;
+
+.baner {
+  height: 400px;
   width: 100%;
+  background-color: #9c9c9c;
+  font-size: 110px;
+  position: absolute;
+  left: 2000px;
+  animation: Slide 10s linear infinite;
 }
-.tableHeader {
-  background-color: var(--mainColor);
+
+.box {
+  height: 1100px;
+  width: 1300px;
+  display: flex;
+  margin: auto;
 }
-table,
-td {
-  border: 1px solid rgba(0, 0, 0, 0.26);
-  background-color: var(--BGC);
-  text-align: center;
-  transition: 0.2s linear;
-  font-size: 22px;
+.info {
+  height: 550px;
+  width: 600px;
+  margin-top: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-th {
-  border: 1px solid rgba(0, 0, 0, 0.26);
-  text-align: center;
-  transition: 0.5s linear;
+.info p {
+  font-size: 23px;
+  line-height: 30px;
+  font-weight: 500;
 }
-td:hover,
-th:hover {
-  font-size: 25px;
-}
-table {
-  height: 90%;
-  width: 90%;
-  margin: 5% 5% 5% 5%;
-  border-collapse: collapse;
-}
+
 footer {
   height: 100px;
   width: 100%;
-  background-color: rgb(1, 20, 2);
+  background-color: rgba(1, 20, 2, 0.644);
+}
+@keyframes Slide {
+  0% {
+    left: 2000px;
+  }
+  100% {
+    left: -2000px;
+  }
 }

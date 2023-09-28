@@ -1,5 +1,6 @@
 :root {
   --mainColor: #6cce4e;
+  --BGC: #eefce3;
 }
 * {
   margin: 0;
@@ -17,7 +18,7 @@ a {
 header {
   background-color: var(--mainColor);
   height: 120px;
-  width: 1730px;
+  width: 100%;
   box-shadow: 1px 1px 1px #9c9c9c;
   display: flex;
   justify-content: space-around;
@@ -49,6 +50,9 @@ header {
   justify-content: space-between;
   align-items: center;
   list-style: none;
+}
+main {
+  background-color: var(--BGC);
 }
 .title {
   width: 100%;

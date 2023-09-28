@@ -52,45 +52,43 @@ header {
   list-style: none;
 }
 main {
-  background-image: url(zdj/img1.jpg);
-  background-size: cover;
+  background-color: var(--BGC);
+  width: auto;
+  height: auto;
+  padding: 150px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container_1 {
+  width: 1400px;
   height: auto;
-  width: 80%;
-  margin: 0px 10%;
-  padding: 150px 0px;
+  display: flex;
+  flex-direction: column;
 }
-.cennik {
-  height: 700px;
+.container_1 > * {
+  height: auto;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
-.tableHeader {
-  background-color: var(--mainColor);
+.container_1 img {
+  max-height: 500px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.384);
 }
-table,
-td {
-  border: 1px solid rgba(0, 0, 0, 0.26);
-  background-color: var(--BGC);
-  text-align: center;
-  transition: 0.2s linear;
-  font-size: 22px;
+.col-1 > *,
+.col-2 > *,
+.col-3 > * {
+  padding: 30px;
+  font-size: 19px;
 }
-th {
-  border: 1px solid rgba(0, 0, 0, 0.26);
-  text-align: center;
-  transition: 0.5s linear;
+
+.col-2 h1,
+.col-3 h1 {
+  padding: 20px;
 }
-td:hover,
-th:hover {
-  font-size: 25px;
-}
-table {
-  height: 90%;
-  width: 90%;
-  margin: 5% 5% 5% 5%;
-  border-collapse: collapse;
-}
+
 footer {
   height: 100px;
   width: 100%;
