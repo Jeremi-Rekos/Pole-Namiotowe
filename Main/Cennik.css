@@ -81,10 +81,6 @@ th {
   text-align: center;
   transition: 0.5s linear;
 }
-td:hover,
-th:hover {
-  font-size: 25px;
-}
 table {
   height: 90%;
   width: 90%;
