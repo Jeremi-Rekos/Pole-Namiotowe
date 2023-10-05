@@ -1,5 +1,6 @@
 :root {
   --mainColor: #6cce4e;
+  --second: #9aff7b;
   --BGC: #eefce3;
 }
 * {
@@ -14,42 +15,6 @@ body {
 a {
   text-decoration: none;
   color: inherit;
-}
-header {
-  background-color: var(--mainColor);
-  height: 120px;
-  width: 100%;
-  box-shadow: 1px 1px 1px #9c9c9c;
-  display: flex;
-  justify-content: space-around;
-  z-index: 6;
-  /* margin-bottom: 10px; */
-}
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.logoClass {
-  height: 100px;
-}
-.nazwa {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.nav {
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.nav ul {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
 }
 main {
   width: 100%;
@@ -79,6 +44,7 @@ main {
   height: 1700px;
   width: 1200px;
   background-color: var(--mainColor);
+  background-image: linear-gradient(45deg, var(--mainColor), var(--second));
   margin: auto;
   box-shadow: 3px 3px 3px #00000067;
   border-radius: 60px;
@@ -122,7 +88,11 @@ main {
   align-items: center;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.315);
   border-radius: 15px;
-  background-color: #64be48;
+  background-color: #72da52;
+  transition: 0.2s linear;
+}
+.wwhList li:hover {
+  background-color: #77e955;
 }
 .conteiner_3 {
   margin-top: 100px;
@@ -154,8 +124,13 @@ main {
   padding: 10px 30px;
   height: 50px;
   width: 200px;
-  background-color: #64be48;
+  background-color: #72da52;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.315);
+  transition: 0.2s linear;
+}
+.rezerwacja button:hover {
+  cursor: pointer;
+  background-color: #eefce3;
 }
 .mapa {
   border-radius: 30px;

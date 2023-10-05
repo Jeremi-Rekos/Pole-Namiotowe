@@ -15,42 +15,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-header {
-  background-color: var(--mainColor);
-  height: 120px;
-  width: 100%;
-  box-shadow: 1px 1px 1px #9c9c9c;
-  display: flex;
-  justify-content: space-around;
-  z-index: 6;
-  /* margin-bottom: 10px; */
-}
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.logoClass {
-  height: 100px;
-}
-.nazwa {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.nav {
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.nav ul {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-}
 main {
   background-color: var(--BGC);
   width: auto;
