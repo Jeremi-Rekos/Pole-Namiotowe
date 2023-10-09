@@ -16,21 +16,36 @@ a {
   color: inherit;
 }
 main {
+  padding-top: 120px;
   background-image: linear-gradient(45deg, var(--BGC) 50%, var(--second));
   width: auto;
   height: auto;
 }
 
-.baner {
+.baner,
+.baner2,
+.baner3 {
   height: 400px;
   width: 100%;
-  background-color: #9c9c9c;
   font-size: 110px;
   position: absolute;
   left: 2000px;
-  animation: Slide 10s linear infinite;
+  animation: Slide 70s linear infinite;
+  display: flex;
 }
-
+.baner2 {
+  animation: Slide2 70s linear infinite;
+  animation-delay: 35s;
+}
+.baner3 {
+  left: 0px;
+  animation: Slide3 70s linear;
+}
+.baner img,
+.baner2 img,
+.baner3 img {
+  max-height: 400px;
+}
 .box {
   height: 1100px;
   width: 1300px;
@@ -60,7 +75,24 @@ footer {
   0% {
     left: 2000px;
   }
+
   100% {
     left: -2000px;
+  }
+}
+@keyframes Slide2 {
+  0% {
+    left: 2000px;
+  }
+  100% {
+    left: -2000px;
+  }
+}
+@keyframes Slide3 {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: -4000px;
   }
 }

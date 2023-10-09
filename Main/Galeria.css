@@ -15,9 +15,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
 main {
   background-color: var(--BGC);
+  height: auto;
+  padding-bottom: 100px;
 }
 .title {
   width: 100%;
@@ -33,7 +34,7 @@ main {
 .container_1 {
   height: auto;
   width: 70%;
-  margin: 0px 15% 100px;
+  margin: 100px 15% 100px;
   display: flex;
 }
 
@@ -63,6 +64,7 @@ main {
 
 img:hover {
   scale: 0.95;
+  transform: rotate(-2deg);
 }
 footer {
   height: 100px;
