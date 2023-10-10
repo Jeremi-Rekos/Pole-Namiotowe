@@ -66,8 +66,3 @@ img:hover {
   scale: 0.95;
   transform: rotate(-2deg);
 }
-footer {
-  height: 100px;
-  width: 100%;
-  background-color: rgb(1, 20, 2);
-}

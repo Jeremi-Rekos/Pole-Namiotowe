@@ -116,8 +116,3 @@ button {
   left: -20px;
   box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.315);
 }
-footer {
-  height: 100px;
-  width: 100%;
-  background-color: rgb(1, 20, 2);
-}

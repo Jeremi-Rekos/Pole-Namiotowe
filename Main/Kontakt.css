@@ -66,11 +66,6 @@ main {
   font-weight: 500;
 }
 
-footer {
-  height: 100px;
-  width: 100%;
-  background-color: rgba(1, 20, 2, 0.644);
-}
 @keyframes Slide {
   0% {
     left: 2000px;
