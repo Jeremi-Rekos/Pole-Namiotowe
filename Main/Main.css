@@ -8,8 +8,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
+  width: 100%;
+
   overflow-x: hidden;
 }
 a {
@@ -144,4 +147,66 @@ main {
   font-weight: 300;
   margin-top: 100px;
 }
-
+@media only screen and (max-width: 1200px) {
+  .conteiner_2 {
+    width: 700px;
+  }
+  .conteiner_1 {
+    height: 100px;
+  }
+  .wwhList {
+    grid-template-columns: 1fr 1fr;
+  }
+  .lastbby {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+    gap: 10px;
+  }
+  .conteiner_3 {
+    grid-template-columns: 1fr;
+  }
+  .rezerwacja {
+    height: 100%;
+    grid-column: 1 / 3;
+  }
+  .mapa {
+    display: none;
+  }
+  .ending {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .conteiner_2 {
+    width: auto;
+    padding: 0px;
+    height: auto;
+  }
+  .icons {
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  .opisListy {
+    font-size: 19px;
+  }
+  .firstText {
+    font-size: 12px;
+    margin: 0;
+    padding: 50px 50px 0px 50px;
+  }
+  .wwhList {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+  .lastbby {
+    grid-column: 1 / 2;
+    grid-row: 5;
+    gap: 10px;
+  }
+  .wwhList li {
+    display: grid;
+  }
+}
