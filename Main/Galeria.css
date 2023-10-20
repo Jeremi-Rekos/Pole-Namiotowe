@@ -67,3 +67,24 @@ img:hover {
   scale: 0.95;
   transform: rotate(-2deg);
 }
+@media only screen and (max-width: 1200px) {
+  .container_1 {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .container_1 {
+    float: none;
+    flex-wrap: wrap;
+  }
+  .container_2 {
+    width: 48%;
+  }
+  .container_3 {
+    width: 48%;
+  }
+  .container_4 {
+    width: 48%;
+  }
+}
