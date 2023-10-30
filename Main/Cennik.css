@@ -53,3 +53,27 @@ table {
   margin: 5% 5% 5% 5%;
   border-collapse: collapse;
 }
+@media only screen and (max-width: 1000px) {
+  .container_1 {
+    width: 100%;
+    margin: 0px;
+  }
+  .cennik {
+    width: 100%;
+  }
+
+  tbody,
+  td {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  tbody,
+  td {
+    font-size: 13px;
+  }
+  table {
+    width: 100%;
+    margin: 0px;
+  }
+}
