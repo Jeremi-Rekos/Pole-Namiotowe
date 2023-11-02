@@ -10,6 +10,7 @@
   scroll-behavior: smooth;
 }
 body {
+  width: 100vw;
   overflow-x: hidden;
 }
 a {
@@ -18,7 +19,7 @@ a {
 }
 main {
   background-image: linear-gradient(45deg, var(--BGC) 50%, var(--second));
-  width: auto;
+  width: 100vw;
   height: auto;
 }
 
@@ -69,25 +70,31 @@ main {
 @keyframes Slide {
   0% {
     left: 2000px;
+    display: flex;
   }
 
   100% {
     left: -2000px;
+    display: flex;
   }
 }
 @keyframes Slide2 {
   0% {
     left: 2000px;
+    display: flex;
   }
   100% {
     left: -2000px;
+    display: flex;
   }
 }
 @keyframes Slide3 {
   0% {
     left: 0px;
+    display: flex;
   }
   100% {
     left: -4000px;
+    display: flex;
   }
 }

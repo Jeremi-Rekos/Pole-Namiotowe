@@ -32,59 +32,65 @@ main {
 .title h1 {
   font-weight: 400;
 }
-.container_1 {
-  height: auto;
-  width: 70%;
-  margin: 100px 15% 100px;
+.images li {
+  list-style: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.images img {
+  width: 100%;
+  border-radius: 4px;
+}
+.images .card {
+  margin-bottom: 10px;
+  position: relative;
+  transition: 0.2s linear;
+  overflow: hidden;
+}
+.gallery .images {
+  columns: 3;
+  gap: 10px;
+  width: 90%;
+}
+.gallery {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.container_3,
-.container_2 {
-  float: left;
-  height: auto;
-  width: 32%;
-  display: grid;
-  gap: 10px;
-  margin-right: 10px;
-}
-.container_4 {
-  height: auto;
-  width: 32%;
-  display: grid;
-  gap: 10px;
-}
-
-.container_2 img,
-.container_3 img,
-.container_4 img {
-  max-width: 100%;
-  height: auto;
+.images .card .details {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(226, 226, 226);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  width: 100%;
+  padding: 20px 10px;
+  border-radius: 4px;
   transition: 0.2s linear;
 }
+.place {
+}
 
-img:hover {
+.card:hover {
   scale: 0.95;
   transform: rotate(-2deg);
 }
-@media only screen and (max-width: 1200px) {
-  .container_1 {
-    width: 90%;
-    margin: auto;
+
+@media only screen and (max-width: 700px) {
+  .gallery .images {
+    columns: 2;
   }
 }
-@media only screen and (max-width: 700px) {
-  .container_1 {
-    float: none;
-    flex-wrap: wrap;
+@media only screen and (max-width: 500px) {
+  .gallery .images {
+    columns: 1;
   }
-  .container_2 {
-    width: 48%;
-  }
-  .container_3 {
-    width: 48%;
-  }
-  .container_4 {
-    width: 48%;
-  }
+}
+.bottom {
+  bottom: 0;
 }
