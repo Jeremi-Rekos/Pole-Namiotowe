@@ -22,8 +22,49 @@ main {
   width: 100vw;
   height: auto;
 }
+.top {
+  height: 800px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.opis {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.baner,
+.gallery {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery img {
+  max-height: 555px;
+  border-radius: 7px;
+}
+.slides {
+  background-color: var(--BGC);
+  border: var(--BGC) solid 10px;
+  border-radius: 7px;
+  box-shadow: 3px 1px 5px rgba(0, 0, 0, 0.438);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slides h3 {
+  padding: 20px 0px;
+  font-size: 21px;
+  font-weight: 500;
+  color: black;
+}
+
+/* .baner,
 .baner2,
 .baner3 {
   height: 400px;
@@ -46,9 +87,9 @@ main {
 .baner2 img,
 .baner3 img {
   max-height: 400px;
-}
+} */
 .box {
-  height: 1100px;
+  height: 600px;
   width: 1300px;
   display: flex;
   margin: auto;
@@ -56,7 +97,7 @@ main {
 .info {
   height: 550px;
   width: 600px;
-  margin-top: 440px;
+  /* margin-top: 440px; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -67,7 +108,7 @@ main {
   font-weight: 500;
 }
 
-@keyframes Slide {
+/* @keyframes Slide {
   0% {
     left: 2000px;
     display: flex;
@@ -97,4 +138,4 @@ main {
     left: -4000px;
     display: flex;
   }
-}
+} */
