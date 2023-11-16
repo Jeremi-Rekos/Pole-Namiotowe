@@ -80,16 +80,6 @@ main {
   transform: rotate(-2deg);
 }
 
-@media only screen and (max-width: 700px) {
-  .gallery .images {
-    columns: 2;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .gallery .images {
-    columns: 1;
-  }
-}
 .lightBox {
   position: fixed;
   display: none;
@@ -97,7 +87,7 @@ main {
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 10;
+  z-index: 1;
   background-color: #0000007c;
   justify-content: center;
   align-items: center;
@@ -112,17 +102,67 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .next,
-.prev {
+.prev,
+.close {
   height: 100px;
   width: 100px;
-  background-color: #6cce4e85;
-  z-index: 11;
+  background-color: transparent;
+  z-index: 121;
   border: none;
   border-radius: 7px;
+  position: absolute;
+  cursor: pointer;
 }
 .next img,
-.prev img {
+.prev img,
+.close img {
   max-height: 50px;
+  filter: invert(1);
+}
+.next {
+  top: 45%;
+  right: 5%;
+}
+.prev {
+  top: 45%;
+  left: 5%;
+}
+.close {
+  top: 5%;
+  right: 5%;
+}
+@media only screen and (max-width: 1500px) {
+  .lightFront img {
+    max-height: 500px;
+  }
+  .lightFront {
+    max-width: 7000px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .lightFront img {
+    max-height: 300px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .gallery .images {
+    columns: 2;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .lightFront img {
+    max-height: 200px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .gallery .images {
+    columns: 1;
+  }
+  .lightFront img {
+    max-height: 150px;
+  }
 }

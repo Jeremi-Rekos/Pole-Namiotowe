@@ -1,4 +1,4 @@
-const numImages = 4;
+const numImages = 12;
 
 let currentImageIndex = 1;
 const imageElement = document.getElementById("image");
@@ -8,7 +8,7 @@ function autoSlide() {
   showImage(currentImageIndex);
 }
 
-const slideInterval = setInterval(autoSlide, 7000);
+const slideInterval = setInterval(autoSlide, 5000);
 
 function showImage(index) {
   const newImage = new Image();
@@ -28,3 +28,4 @@ function showImage(index) {
   };
 }
 showImage(currentImageIndex);
+console.log(imageElement);
