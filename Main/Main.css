@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
 :root {
   --mainColor: #6cce4e;
   --second: #9aff7b;
@@ -28,16 +29,104 @@ main {
   padding-bottom: 200px;
 }
 .conteiner_1 {
-  height: 500px;
+  height: 700px;
   width: 100%;
-  /* background-color: rgba(0, 0, 0, 0.37); */
+
   background-image: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.589) 50%,
+    rgba(0, 0, 0, 0.623) 70%,
     transparent
   );
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
+#con_1 {
+  margin-top: 50px;
+  width: 1400px;
+  height: 900px;
+  display: block;
+  position: relative;
+  list-style-type: none;
+}
+#con_1 * {
+  user-select: none;
+}
+#con_1 input {
+  display: none;
+}
+#img-inner {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 1400px;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: scale(0);
+  transition: all 0.7s ease-in-out;
+  border-radius: 17px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.404);
+}
+
+#img-inner img {
+  height: 100%;
+  width: 100%;
+  border-radius: 17px;
+}
+#img-inner:nth-of-type(1) {
+  background-image: url("zdj/image1.jpg"), url("zdj/image2.jpg"),
+    url("zdj/image3.jpg");
+}
+#img-inner:hover ~ label.sb-bignav {
+  opacity: 0.5;
+}
+
+label.sb-bignav:hover {
+  opacity: 1;
+}
+
+.sb-bignav {
+  width: 200px;
+  height: 100%;
+  display: none;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  color: white;
+  font-size: 156pt;
+  text-align: center;
+  line-height: 800px;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-shadow: 0px 0px 15px rgb(119, 119, 119);
+  border-radius: 17px;
+}
+
+label[title="Next"] {
+  right: 0;
+}
+
+input:checked + li > #img-inner {
+  opacity: 1;
+
+  transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+
+  transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+}
+
+input:checked + li > label {
+  display: block;
+}
+
 .onas {
   height: 150px;
   width: 100%;
@@ -63,6 +152,8 @@ main {
   font-size: 18px;
   line-height: 27px;
   text-align: center;
+  position: relative;
+  z-index: 10;
 }
 .firstText {
   margin-bottom: 50px;
@@ -154,6 +245,7 @@ main {
   font-weight: 300;
   margin-top: 100px;
 }
+
 @media only screen and (max-width: 1200px) {
   .conteiner_2 {
     width: 700px;
