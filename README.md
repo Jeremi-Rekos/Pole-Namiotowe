@@ -5,7 +5,9 @@
 
  ## Preview
 
-  ![Camp website prev](./Images/campsite.png)
+  ![Camp website prev](./gitimg/polenamiotowe.png)
+  ![Camp website prev2](./gitimg/polenamiotowe2.png)
+  
 
   ## Technologies :computer:
 
